@@ -1,0 +1,105 @@
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.profile-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.profile-picture {
+  max-width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.profile-links {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.profile-links a img {
+  max-width: 40px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.profile-links a:hover img {
+  transform: scale(1.2);
+}
+
+.introduction-section {
+  flex: 2;
+  padding: 20px;
+}
+
+.introduction-section h1 {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.introduction-section h1::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background: #4a6da7;
+  border-radius: 3px;
+  transition: width 0.3s ease 0.1s;
+}
+
+.introduction-section h1:hover::after {
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+.introduction-section p {
+  font-family: 'Nunito', sans-serif;
+  color: #2c3e50;
+}
+
+.quote {
+  font-style: italic;
+  color: #555;
+  border-left: 3px solid #4a6da7;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.quote-author {
+  display: block;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+.quote {
+  transition: all 0.3s ease;
+}
+
+.quote:hover {
+  border-left-width: 5px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+  }
+}

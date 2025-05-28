@@ -1,0 +1,143 @@
+.experience-container {
+  text-align: center;
+  padding: 10px;
+}
+
+.experience-header {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.experience-header::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background: #4a6da7;
+  border-radius: 3px;
+  transition: width 0.3s ease 0.1s;
+}
+
+.experience-header:hover::after {
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px 0;
+}
+
+.time-period {
+  flex-shrink: 0;
+  width: 100px;
+  text-align: right;
+  margin-right: 15px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9em;
+}
+
+.time-period,
+.timeline-divider {
+  flex: none;
+}
+
+.timeline-divider {
+  width: 1px;
+  height: 100px;
+  background-color: #4a6da7;
+  margin: 0 20px;
+
+}
+
+.timeline-circle {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  background-color: #4a6da7;
+  border-radius: 50%;
+}
+
+.job-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: 'Lora', serif;
+  font-size: 1.2em;
+}
+
+.employer-name {
+  color: #aaa;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9em;
+}
+
+.job-description {
+  margin-left: 20px;
+  text-align: left;
+  color: #333;
+  font-size: 0.9em;
+  margin-top: 5px;
+  flex-grow: 1;
+
+}
+
+.job-detail {
+  text-align: left;
+  color: #333;
+  font-size: 0.95em;
+  margin-top: 10px;
+  font-family: 'Nunito', sans-serif;
+
+
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+  }
+
+  .time-period {
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+
+  .timeline-divider {
+    width: 80%;
+    height: 1px;
+    margin: 10px 0;
+  }
+
+  .timeline-circle {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .job-description {
+    text-align: center;
+  }
+}

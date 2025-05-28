@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: 100%;
+  overflow-y: auto;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+section {
   min-height: 100vh;
+}
+
+.menu-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  z-index: 10;
+  color: #2c3e50;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background: #f5f5f5;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  z-index: 5;
 }
 
-.App-link {
-  color: #61dafb;
+.side-menu a,
+.navigation a {
+  padding: 10px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 600;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: block;
+  position: relative; 
+  transition: all 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.side-menu a::after,
+.navigation a::after {
+  content: '';
+  position: absolute;
+  bottom: 5px; 
+  left: 10px;
+  width: 0;
+  height: 2px;
+  background: currentColor; 
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.side-menu a:hover,
+.navigation a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #4a6da7; 
+}
+
+.side-menu a:hover::after,
+.navigation a:hover::after {
+  width: calc(100% - 20px); 
+}
+
+.navigation a.active {
+  font-weight: bold;
+  background-color: rgba(74, 109, 167, 0.1); 
+}
+
+.navigation a.active::after {
+  width: calc(100% - 20px);
+  background: #4a6da7; 
+}
+
+.close-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  z-index: 10;
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .navigation ul {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navigation li {
+    display: block;
+    width: 100%;
+  }
+
+  .navigation li a {
+    text-align: left;
+    padding: 10px;
   }
 }
