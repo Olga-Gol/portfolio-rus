@@ -230,6 +230,31 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Video loading */
+.video-container {
+  position: relative;
+}
+
+.video-container.loading .rotating-video {
+  opacity: 0;
+}
+
+.video-container.loaded .rotating-video {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.video-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
 /*TensorFlow*/
 .tensorflow-image-container {
     position: relative;

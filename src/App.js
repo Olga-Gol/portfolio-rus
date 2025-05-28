@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HomePage from './components/HomePage';
 import Main from './components/Main';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
-
-
-import { useState } from 'react';
+import LoadingScreen from './components/LoadingScreen';
 import './App.css';
 
 const SideMenu = () => {
@@ -39,14 +37,22 @@ const SideMenu = () => {
 };
 
 function App() {
+
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <div>
-      <SideMenu />
-      <section id="home"><HomePage /></section>
-      <section id="main"><Main /></section>
-      <section id="experience"><Experience /></section>
-      <section id="skills"><Skills /></section>
-      
+      {isLoading ? (
+        <LoadingScreen onLoadComplete={() => setIsLoading(false)} />
+      ) : (
+        <>
+          <SideMenu />
+          <section id="home"><HomePage /></section>
+          <section id="main"><Main /></section>
+          <section id="experience"><Experience /></section>
+          <section id="skills"><Skills /></section>
+        </>
+      )}
     </div>
   );
 }

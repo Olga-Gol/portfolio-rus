@@ -1,9 +1,83 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { preload } from 'react-dom';
 import './Main.css';
 import projectData from './ProjectData';
 
+const useVideoPreloader = () => {
+    const videoUrls = [
+        '/videos/hilbert1.mp4',
+        '/videos/hilbert2.mp4',
+        '/videos/hilbert3.mp4',
+        '/videos/minesweeper.mov',
+        '/videos/ShelterGameplay.mp4'
+    ];
+
+    useEffect(() => {
+        videoUrls.forEach(url => {
+            const link = document.createElement('link');
+            link.rel = 'preload';
+            link.as = 'video';
+            link.href = url;
+            document.head.appendChild(link);
+        });
+
+        const videos = videoUrls.map(url => {
+            const video = document.createElement('video');
+            video.src = url;
+            video.preload = 'auto';
+            video.load();
+            video.style.display = 'none';
+            document.body.appendChild(video);
+            return video;
+        });
+
+        return () => videos.forEach(v => v.remove());
+    }, []);
+};
+
+const VideoPlayer = ({ src }) => {
+    const videoRef = useRef(null);
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+        const video = videoRef.current;
+        if (!video) return;
+
+        const handleCanPlay = () => {
+            setIsLoaded(true);
+            video.play().catch(e => console.debug('Autoplay prevented:', e));
+        };
+
+        video.addEventListener('canplay', handleCanPlay);
+        video.load(); 
+
+        return () => {
+            video.removeEventListener('canplay', handleCanPlay);
+            video.pause();
+            video.currentTime = 0;
+        };
+    }, [src]);
+
+    return (
+        <div className={`video-container ${isLoaded ? 'loaded' : 'loading'}`}>
+            {!isLoaded && <div className="video-loader">Loading...</div>}
+            <video
+                ref={videoRef}
+                src={src}
+                loop
+                muted
+                playsInline
+                className="rotating-video"
+                disablePictureInPicture
+            />
+        </div>
+    );
+};
+
+
 const Main = () => {
     const [activeSkill, setActiveSkill] = useState(null);
+    useVideoPreloader();
 
     const handleSkillClick = (skill) => {
         setActiveSkill(skill);
@@ -51,7 +125,8 @@ const Main = () => {
                 })}
             </div>
 
-            {activeSkill && (
+            {/* {activeSkill && ( */}
+            {activeSkill?.videos && (
                 <div className="skill-modal" onClick={handleModalClick}>
                     <div className="skill-content">
 
@@ -65,7 +140,7 @@ const Main = () => {
                                             <img src={activeSkill.imgSrc} alt={activeSkill.name} />
                                         ) : (
                                             <div className={`video-rotation-container ${activeSkill.videoOrientation === 'vertical' ? 'vertical' : 'horizontal'}`}>
-                                                {activeSkill.videos.map((videoSrc, index) => (
+                                                {/* {activeSkill.videos.map((videoSrc, index) => (
                                                     <video
                                                         key={index}
                                                         src={videoSrc}
@@ -74,6 +149,9 @@ const Main = () => {
                                                         muted
                                                         className="rotating-video"
                                                     />
+                                                ))} */}
+                                                {activeSkill.videos.map((src, i) => (
+                                                    <VideoPlayer key={i} src={src} />
                                                 ))}
                                             </div>
                                         )}
