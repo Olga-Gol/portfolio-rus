@@ -254,7 +254,7 @@ const projectData = [
         importance: "high",
         videoOrientation: "vertical",
         videos: [
-            "/videos/ShelterGameplay.MP4"
+            "/videos/ShelterGameplay.webm"
         ],
         bgImage: '/images/expo.png',
         description: () => (
@@ -294,9 +294,9 @@ const projectData = [
         category: "Technical Fields",
         importance: "high",
         videos: [
-            "/videos/hilbert1.mp4",
-            "/videos/hilbert2.mp4",
-            "/videos/hilbert3.mp4"
+            "/videos/hilbert1.webm",
+            "/videos/hilbert2.webm",
+            "/videos/hilbert3.webm"
         ],
         bgImage: '/images/compgeo.gif',
         description: () => (
@@ -341,7 +341,7 @@ const projectData = [
         category: "Frameworks & Libraries",
         importance: "high",
         videos: [
-            "/videos/minesweeper.mov"
+            "/videos/minesweeper.webm"
         ],
         bgImage: '/images/spring.png',
         description: () => (

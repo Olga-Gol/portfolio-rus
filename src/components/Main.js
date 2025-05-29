@@ -60,7 +60,12 @@ const VideoPlayer = ({ src }) => {
 
     return (
         <div className={`video-container ${isLoaded ? 'loaded' : 'loading'}`}>
-            {!isLoaded && <div className="video-loader">Loading...</div>}
+            {!isLoaded && (
+            <div className="video-loader" aria-busy="true" aria-live="polite">
+                <div className="loading-spinner" aria-hidden="true"></div>
+                    <span className="loading-text">Loading video...</span>
+                     </div>
+            )}
             <video
                 ref={videoRef}
                 src={src}
@@ -69,6 +74,7 @@ const VideoPlayer = ({ src }) => {
                 playsInline
                 className="rotating-video"
                 disablePictureInPicture
+                aria-hidden={!isLoaded}
             />
         </div>
     );
