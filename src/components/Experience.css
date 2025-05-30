@@ -94,6 +94,33 @@
   transition: transform 0.5s ease;
 }
 
+.job-title-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+.employer-logo {
+  max-width: 55px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 1s ease-in-out;
+}
+
+.employer-logo:hover {
+  transform: rotate(360deg);
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .job-title {
   font-weight: bold;
   margin-bottom: 5px;

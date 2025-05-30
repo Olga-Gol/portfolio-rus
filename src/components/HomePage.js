@@ -11,7 +11,7 @@ const HomePage = () => (
       <div className="cursor-section">
         <h1>Привет, я <strong>Ольга Головацкая</strong></h1>
 
-        <p>Я окончила бакалавриат Mount Holyoke College с двойной специализацией: Математика и Информатика. Мне интересны
+        <p>Я окончила бакалавриат Mount Holyoke College (Массачуссеттс, США) с двойной специализацией: Математика и Информатика. Мне интересны
           <strong> алгоритмы</strong>, <strong>машинное обучение</strong>, <strong>оптимизация</strong> и <strong>вычислительная геометрия</strong>.
           Мне нравится работать с такими языками как <strong>Java</strong>, <strong>JavaScript</strong> и <strong>Python</strong>,
           а также создавать проекты с помощью <strong>React</strong>, <strong>Spring Boot</strong> и <strong>TensorFlow</strong>.
