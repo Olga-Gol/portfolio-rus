@@ -467,6 +467,7 @@
     pointer-events: none;
     text-align: center;
     white-space: nowrap;
+    
     text-wrap: wrap;
 }
 
@@ -679,6 +680,7 @@
     pointer-events: none;
     text-align: center;
     white-space: nowrap;
+    
     text-wrap: wrap;
 }
 
