@@ -49,7 +49,7 @@ const VideoPlayer = ({ src }) => {
         };
 
         video.addEventListener('canplay', handleCanPlay);
-        video.load(); 
+        video.load();
 
         return () => {
             video.removeEventListener('canplay', handleCanPlay);
@@ -61,10 +61,10 @@ const VideoPlayer = ({ src }) => {
     return (
         <div className={`video-container ${isLoaded ? 'loaded' : 'loading'}`}>
             {!isLoaded && (
-            <div className="video-loader" aria-busy="true" aria-live="polite">
-                <div className="loading-spinner" aria-hidden="true"></div>
+                <div className="video-loader" aria-busy="true" aria-live="polite">
+                    <div className="loading-spinner" aria-hidden="true"></div>
                     <span className="loading-text">Loading...</span>
-                     </div>
+                </div>
             )}
             <video
                 ref={videoRef}
@@ -108,27 +108,29 @@ const Main = () => {
         <div id="main" className="main-container">
 
             <h2 className="main-header">ПРОЕКТЫ</h2>
+            <div className="cursor-section">
 
-            <div className="skills-cloud">
-                {projectData.map((skill) => {
-                    // Determine button size based on importance level
-                    const sizeClass = skill.importance === 'high'
-                        ? 'skill-button-large'
-                        : skill.importance === 'medium'
-                            ? 'skill-button-medium'
-                            : 'skill-button-small';
+                <div className="skills-cloud">
+                    {projectData.map((skill) => {
+                        // Determine button size based on importance level
+                        const sizeClass = skill.importance === 'high'
+                            ? 'skill-button-large'
+                            : skill.importance === 'medium'
+                                ? 'skill-button-medium'
+                                : 'skill-button-small';
 
-                    return (
-                        <button
-                            key={skill.id}
-                            className={`skill-button ${sizeClass}`}
-                            onClick={() => handleSkillClick(skill)}
-                            style={skill.bgImage ? { backgroundImage: `url(${skill.bgImage})` } : {}}
-                        >
-                            {skill.showNameOnButton && skill.name}
-                        </button>
-                    );
-                })}
+                        return (
+                            <button
+                                key={skill.id}
+                                className={`skill-button ${sizeClass}`}
+                                onClick={() => handleSkillClick(skill)}
+                                style={skill.bgImage ? { backgroundImage: `url(${skill.bgImage})` } : {}}
+                            >
+                                {skill.showNameOnButton && skill.name}
+                            </button>
+                        );
+                    })}
+                </div>
             </div>
 
             {activeSkill && (
