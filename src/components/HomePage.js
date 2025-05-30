@@ -8,17 +8,17 @@ const HomePage = () => (
 
     </div>
     <div className="introduction-section">
-      <h1>Hey, I'm <strong>Olga (Olya) Golovatskaia</strong></h1>
+      <h1>Привет, я <strong>Ольга Головацкая</strong></h1>
 
-      <p>I'm a recent Computer Science & Mathematics graduate from Mount Holyoke College, interested in
-        <strong> algorithms</strong>, <strong>machine learning</strong>, <strong>optimization</strong>, and <strong>computational geometry</strong>.
-        I enjoy working with languages like <strong>Java</strong>, <strong>JavaScript</strong>, and <strong>Python</strong>,
-        and building with <strong>React</strong>, <strong>Spring Boot</strong>, and <strong>TensorFlow</strong>.
+       <p>Я недавно окончила Mount Holyoke College по специальностям Математика и Информатика. Мне интересны  
+        <strong> алгоритмы</strong>, <strong>машинное обучение</strong>, <strong>оптимизация</strong> и <strong>вычислительная геометрия</strong>.
+        Мне нравится работать с такими языками как <strong>Java</strong>, <strong>JavaScript</strong> и <strong>Python</strong>,
+        а также создавать проекты с помощью <strong>React</strong>, <strong>Spring Boot</strong> и <strong>TensorFlow</strong>.
       </p>
-      <p> When I'm not coding, you'll find me reading a good book or making little games for friends. </p>
+      <p>Когда я не пишу код, вы можете найти меня за чтением хорошей книги или созданием небольших игр для друзей.</p>
 
-      <blockquote className="quote">All great deeds and all great thoughts have a ridiculous beginning.</blockquote>
-      <p className="quote-author">- Albert Camus</p>
+      <blockquote className="quote">Все великие дела и все великие мысли имеют смехотворное начало.</blockquote>
+      <p className="quote-author">- Альбер Камю</p>
 
       <div className="profile-links">
         <a href="/papers/CV.pdf" target="_blank" rel="noopener noreferrer">

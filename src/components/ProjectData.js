@@ -1,7 +1,7 @@
 const projectData = [
     {
         id: 1,
-        name: "Data Analysis",
+        name: "Анализ данных",
         showNameOnButton: true,
         category: "Additional Skills",
         importance: "high",
@@ -21,25 +21,23 @@ const projectData = [
                                 alt="Global Recipe Sentiment Analysis"
                                 className="data-analysis-image"
                             />
-                            <div className="data-analysis-image-overlay">Global Recipe Sentiment Analysis</div>
+                            <div className="data-analysis-image-overlay">Анализ настроений по глобальным рецептам/Global Recipe Sentiment Analysis</div>
                         </a>
                     </div>
                     <div className="data-analysis-text">
                         <p>
-                            Experience in data analysis using Python and libraries like <strong>pandas, </strong>
-                            <strong>numpy, </strong> <strong>matplotlib,</strong> and <strong>nltk</strong>.
-                            Skilled in data cleaning, exploratory data analysis, visualization, and statistical
-                            reasoning.
+                            Опыт анализа данных с использованием Python и библиотек, таких как <strong>pandas, </strong>
+                            <strong>numpy, </strong> <strong>matplotlib,</strong> и <strong>nltk</strong>.
+                            Навыки очистки данных, разведочного анализа, визуализации и статистического анализа.
                         </p>
                         <p>
-                            <strong>Selected project: </strong>Conducted a sentiment analysis on a large dataset
-                            of international recipes scraped from The New York Times. Analyzed how people
-                            emotionally responded to food from different countries across decades,
-                            comparing trends in positive and negative sentiment.
+                            <strong>Выбранный проект: </strong>Проведен анализ настроений на большом наборе данных
+                            международных рецептов, собранных из The New York Times. Анализировались эмоциональные реакции
+                            на блюда из разных стран на протяжении десятилетий, сравнивались тенденции позитивных и негативных оценок.
                         </p>
                         <p>
-                            Applied natural language processing techniques in <strong>Jupyter Notebook </strong>
-                            to uncover cultural and temporal patterns in food reviews and comments.
+                            Применены методы обработки естественного языка в <strong>Jupyter Notebook </strong>
+                            для выявления культурных и временных закономерностей в отзывах и комментариях о еде.
                         </p>
                     </div>
                 </div>
@@ -56,20 +54,19 @@ const projectData = [
         description: () => (
             <>
                 <p>
-                    Extensive experience with Java development across various applications and systems.
-                    Proficient in core Java concepts including OOP principles, data structures, multithreading,
-                    and design patterns.
+                    Обширный опыт разработки на Java для различных приложений и систем.
+                    Владение основными концепциями Java, включая принципы ООП, структуры данных, многопоточность
+                    и шаблоны проектирования.
                 </p>
                 <p>
-                    Built several applications leveraging Java's robust libraries and frameworks, focusing on
-                    performance optimization and clean code architecture.
+                    Создано несколько приложений с использованием библиотек и фреймворков Java, с акцентом на
+                    оптимизацию производительности и чистую архитектуру кода.
                 </p>
-
             </>
         ),
         relatedProjects: [
             {
-                label: "Minesweeper (Spring Boot)",
+                label: "Сапер (Spring Boot)",
                 skillId: 9
             }
         ]
@@ -84,30 +81,30 @@ const projectData = [
         description: () => (
             <>
                 <p>
-                    Strong proficiency in JavaScript for both front-end and back-end development.
-                    Experienced with ES6+ features, asynchronous programming, and functional concepts.
+                    Глубокое знание JavaScript для front-end и back-end разработки.
+                    Опыт работы с функциями ES6+, асинхронным программированием и функциональными концепциями.
                 </p>
                 <p>
-                    Developed interactive web applications and utilized JavaScript frameworks like React
-                    to create responsive user interfaces with efficient state management.
+                    Разработаны интерактивные веб-приложения с использованием фреймворков, таких как React,
+                    для создания отзывчивых интерфейсов с эффективным управлением состоянием.
                 </p>
             </>
         ),
         relatedProjects: [
             {
-                label: "Visualizing metrics (Computational Geometry)",
+                label: "Визуализация метрик (Вычислительная геометрия)",
                 skillId: 8
             },
             {
-                label: "Portfolio website (React)",
+                label: "Сайт-портфолио (React)",
                 skillId: 6
             },
             {
-                label: "SHELTER Game (React Native / Expo)",
+                label: "Игра SHELTER (React Native / Expo)",
                 skillId: 7
             },
             {
-                label: "Minesweeper (Spring Boot)",
+                label: "Сапер (Spring Boot)",
                 skillId: 9
             }
         ]
@@ -122,29 +119,29 @@ const projectData = [
         description: () => (
             <>
                 <p>
-                    Advanced Python skills applied across machine learning, data analysis, and algorithm design.
-                    Extensive experience with libraries such as <strong>Pandas, </strong> <strong>NumPy, </strong>
-                    <strong>Matplotlib, </strong> <strong>Seaborn, </strong> <strong>Graphviz, </strong> and
-                    <strong> nltk</strong> for processing, analyzing, and visualizing complex datasets.
+                    Продвинутые навыки Python в машинном обучении, анализе данных и проектировании алгоритмов.
+                    Опыт работы с библиотеками: <strong>Pandas, </strong> <strong>NumPy, </strong>
+                    <strong>Matplotlib, </strong> <strong>Seaborn, </strong> <strong>Graphviz, </strong> и
+                    <strong> nltk</strong> для обработки, анализа и визуализации сложных наборов данных.
                 </p>
                 <p>
-                    Built and evaluated models using <strong>scikit-learn, </strong> <strong>TensorFlow, </strong>
-                    and <strong>PyTorch, </strong> with a strong focus on optimization techniques and applications
-                    in computational geometry and real-world classification tasks.
+                    Создание и оценка моделей с использованием <strong>scikit-learn, </strong> <strong>TensorFlow, </strong>
+                    и <strong>PyTorch, </strong> с акцентом на методы оптимизации и применение
+                    в вычислительной геометрии и задачах классификации.
                 </p>
             </>
         ),
         relatedProjects: [
             {
-                label: "Global Recipe Sentiment Analysis (pandas, numpy, matplotlib, nltk)",
+                label: "Анализ настроений по глобальным рецептам/Global Recipe Sentiment Analysis (pandas, numpy, matplotlib, nltk)",
                 skillId: 1
             },
             {
-                label: "Phishing websites prediction (TensorFlow)",
+                label: "Прогнозирование фишинговых сайтов (TensorFlow)",
                 skillId: 10
             },
             {
-                label: "Linear regression, decision trees (scikit-learn)",
+                label: "Линейная регрессия, деревья решений (scikit-learn)",
                 skillId: 14
             }
         ]
@@ -168,28 +165,28 @@ const projectData = [
 
                             <img
                                 src="/papers/rungekutta.jpg"
-                                alt="Runge-Kutta Method"
+                                alt="Метод Рунге-Кутты"
                                 className="matlab-project-image"
                             />
-                            <div className="matlab-image-overlay">Runge-Kutta Method</div>
+                            <div className="matlab-image-overlay">Метод Рунге-Кутты</div>
                         </a>
                     </div>
                     <div className="matlab-text">
                         <p>
-                            Extensive experience with MATLAB, particularly in the context of linear algebra and ordinary differential equations (ODEs).
-                            Familiar with solving large systems of linear equations, performing LU and QR decompositions, computing eigenvalues and eigenvectors,
-                            and analyzing the stability of matrices. In ODEs, experience includes both analytical and numerical approaches,
-                            such as implementing Euler’s method, Runge-Kutta methods, and phase plane analysis.
+                            Обширный опыт работы с MATLAB, особенно в контексте линейной алгебры и обыкновенных дифференциальных уравнений (ОДУ).
+                            Знакомство с решением больших систем линейных уравнений, выполнением LU и QR разложений, вычислением собственных значений и векторов,
+                            и анализом устойчивости матриц. В ОДУ опыт включает как аналитические, так и численные методы,
+                            такие как метод Эйлера, методы Рунге-Кутты и фазовый анализ.
                         </p>
                         <p>
-                            Additionally skilled in using MATLAB for data visualization, simulation of mathematical models, and algorithm prototyping
-                            for mathematical analysis and engineering problems.
+                            Также есть навыки использования MATLAB для визуализации данных, моделирования математических моделей и прототипирования алгоритмов
+                            для математического анализа и инженерных задач.
                         </p>
                         <p>
-                            <strong>Selected project:</strong> Authored a report providing an overview of the classical fourth-order Runge-Kutta method
-                            for solving initial value problems in ODEs. Implemented the method in MATLAB, validated the results with known
-                            analytical solutions, and visualized error behavior across varying step sizes. The project emphasized both
-                            theoretical foundations and practical implementation.
+                            <strong>Выбранный проект:</strong> Написан отчет, описывающий классический метод Рунге-Кутты 4-го порядка
+                            для решения задач с начальными условиями в ОДУ. Метод реализован в MATLAB, результаты проверены с известными
+                            аналитическими решениями, и визуализировано поведение ошибки при различных шагах. Проект подчеркивает как
+                            теоретические основы, так и практическую реализацию.
                         </p>
                     </div>
                 </div>
@@ -215,23 +212,23 @@ const projectData = [
                         >
                             <img
                                 src="/images/portfolio-preview.png"
-                                alt="Portfolio Website Preview"
+                                alt="Превью сайта-портфолио"
                                 className="portfolio-image"
                             />
-                            <div className="portfolio-image-overlay">This portfolio is built with React - view main page</div>
+                            <div className="portfolio-image-overlay">Это портфолио построено на React - просмотреть главную страницу</div>
                         </a>
                     </div>
                     <div className="portfolio-text">
                         <p>
-                            I build modern web apps using React, with a strong focus on component structure, hooks,
-                            context, and managing state effectively.
+                            Создание современных веб-приложений с использованием React, с акцентом на структуру компонентов, хуки,
+                            контекст и эффективное управление состоянием.
                         </p>
                         <p>
-                            Developed responsive, interactive interfaces that prioritize reusable components and smooth, efficient rendering.
+                            Разработаны адаптивные, интерактивные интерфейсы с приоритетом на переиспользуемые компоненты и плавный рендеринг.
                         </p>
                         <p>
-                            <strong>Selected project:</strong> This portfolio website, fully built in React with a custom design
-                            system and responsive layout written in plain CSS.
+                            <strong>Выбранный проект:</strong> Этот сайт-портфолио, полностью построенный на React с индивидуальной системой дизайна
+                            и адаптивным макетом на чистом CSS.
                         </p>
                         <a
                             href="https://github.com/Olga-Gol/Portfolio"
@@ -239,7 +236,7 @@ const projectData = [
                             rel="noopener noreferrer"
                             style={{ fontWeight: 'bold' }}
                         >
-                            View project on GitHub
+                            Посмотреть проект на GitHub
                         </a>
                     </div>
                 </div>
@@ -260,36 +257,35 @@ const projectData = [
         description: () => (
             <>
                 <p>
-                    SHELTER is a mobile adaptation of a strategic board game where players receive a random set of cards
-                    representing traits such as gender, age, and profession. The objective is to persuade others that your
-                    character’s attributes enhance survival chances in a bunker scenario.
+                    SHELTER - это мобильная адаптация настольной стратегической игры, где игроки получают случайный набор карт,
+                    представляющих характеристики, такие как пол, возраст и профессия. Цель - убедить других, что атрибуты вашего персонажа
+                    повышают шансы на выживание в условиях бункера.
                 </p>
                 <p>
-                    My first dive into iOS development, built with React Native and Expo. While mostly frontend-focused, I used Node.js
-                    for prototyping early API endpoints (like card data fetching). The final app runs
-                    offline, but the Node experiments helped me grasp full-stack workflows.
+                    Мой первый опыт iOS-разработки, построенный на React Native и Expo. Хотя в основном ориентирован на фронтенд, я использовал Node.js
+                    для прототипирования API (например, получение данных карт). Финальное приложение работает
+                    оффлайн, но эксперименты с Node помогли понять полный стек разработки.
                 </p>
-                <h4>Technical Skills Applied:</h4>
+                <h4>Примененные технические навыки:</h4>
                 <ul className="shelter">
-                    <li><strong>React Native:</strong> Built the entire UI with animations, touch interactions, and
-                        offline-ready state management (hooks).</li>
-                    <li><strong>Expo:</strong> Simplified builds and bypassed native code for this pure-JS project.</li>
-                    <li><strong>Node.js:</strong> Prototyped API endpoints during early development to test data flows.</li>
-
+                    <li><strong>React Native:</strong> Построен весь интерфейс с анимациями, touch-взаимодействиями и
+                        управлением состоянием для оффлайн-работы (хуки).</li>
+                    <li><strong>Expo:</strong> Упрощение сборок без нативного кода для этого JS-проекта.</li>
+                    <li><strong>Node.js:</strong> Прототипирование API на ранних этапах разработки для тестирования потоков данных.</li>
                 </ul>
                 <a
                     href="https://github.com/Olga-Gol/ShelterGame"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    View project on GitHub
+                    Посмотреть проект на GitHub
                 </a>
             </>
         ),
     },
     {
         id: 8,
-        name: "Computational Geometry",
+        name: "Вычислительная геометрия",
         showNameOnButton: true,
         category: "Technical Fields",
         importance: "high",
@@ -302,27 +298,27 @@ const projectData = [
         description: () => (
             <div>
                 <p>
-                    Conducted advanced research in computational geometry during the REU program for
-                    Combinatorics, Algorithms, and AI for Real Problems at the University of Maryland,
-                    College Park. Focused on theoretical problems in the Hilbert metric space, including
-                    the Minimum Enclosing Ball (MEB) problem.
+                    Проведены передовые исследования в области вычислительной геометрии в рамках программы REU по
+                    Комбинаторике, Алгоритмам и ИИ для реальных задач в Университете Мэриленда.
+                    Основное внимание уделено теоретическим проблемам в метрическом пространстве Гильберта, включая
+                    задачу минимальной ограничивающей сферы (MEB).
                 </p>
                 <p>
-                    Proved that minimum radius balls over metric spaces with the Heine-Borel property are
-                    LP-type problems, and developed geometric primitives for computing such balls in Hilbert
-                    geometry. Demonstrated extension properties in weak metric spaces and contributed to a
-                    dynamic visualization tool for convex polygonal domains.
+                    Доказано, что минимальные радиусы сфер в метрических пространствах со свойством Гейне-Бореля являются
+                    задачами типа LP, и разработаны геометрические примитивы для вычисления таких сфер в геометрии Гильберта.
+                    Продемонстрированы свойства расширения в слабых метрических пространствах и создан инструмент для динамической
+                    визуализации выпуклых полигональных областей.
                 </p>
                 <p>
-                    Co-developed an interactive JavaScript-based application for visualizing and manipulating
-                    Funk, reverse Funk, and Thompson balls in convex sets. The tool is publicly available at{" "}
+                    Совместно разработано интерактивное приложение на JavaScript для визуализации и манипуляции
+                    сферами Функа, обратного Функа и Томпсона в выпуклых множествах. Инструмент доступен по адресу{" "}
                     <a
                         href="https://funk-geo-visualizer.vercel.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         funk-geo-visualizer.vercel.app
-                    </a>. View the code on{" "}
+                    </a>. Код доступен на{" "}
                     <a
                         href="https://github.com/nithin1527/funk-geo-visualizer?tab=readme-ov-file"
                         target="_blank"
@@ -348,29 +344,28 @@ const projectData = [
             <>
                 <div>
                     <p>
-                        Built a full-stack <strong>Minesweeper-style game</strong> using
-                        <strong> Java</strong> and <strong>Spring Boot</strong> for the backend, with a
-                        clean and responsive frontend in <strong>HTML</strong>, <strong>CSS</strong>,
-                        and <strong>JavaScript</strong>.
+                        Создана полноценная <strong>игра в стиле Сапера</strong> с использованием
+                        <strong> Java</strong> и <strong>Spring Boot</strong> для бэкенда, и
+                        чистым адаптивным фронтендом на <strong>HTML</strong>, <strong>CSS</strong>,
+                        и <strong>JavaScript</strong>.
                     </p>
                     <p>
-                        Gained practical experience designing and implementing RESTful APIs, managing
-                        game state server-side, and deploying a live application using
+                        Получен практический опыт проектирования и реализации RESTful API, управления
+                        состоянием игры на стороне сервера и развертывания работающего приложения с использованием
                         <strong> Railway</strong>.
                     </p>
                     <p>
-                        This is a classic Minesweeper game with a slightly chaotic twist — instead of mines,
-                        you're trying to avoid stepping on vicious kittens. Same rules, different stakes.
-
+                        Это классическая игра Сапер с небольшой изюминкой — вместо мин вы пытаетесь избежать
+                        встречи с агрессивными котятами. Те же правила, другие ставки.
                     </p>
-                    The game is publicly available at{" "}
+                    Игра доступна по адресу{" "}
                     <a
                         href="https://kittensweeper.up.railway.app"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         kittensweeper.up.railway.app
-                    </a>. View the code on{" "}
+                    </a>. Код доступен на{" "}
                     <a
                         href="https://github.com/Olga-Gol/Minesweeper/"
                         target="_blank"
@@ -401,21 +396,20 @@ const projectData = [
 
                             <img
                                 src="/papers/tensorflow.png"
-                                alt="TensorFlow Project"
+                                alt="Проект TensorFlow"
                                 className="tensorflow-image"
                             />
-                            <div className="tensorflow-image-overlay">TensorFlow Project</div>
+                            <div className="tensorflow-image-overlay">Проект TensorFlow</div>
                         </a>
                     </div>
                     <div className="tensorflow-text">
                         <p>
-                            Experience with TensorFlow for building, training, and deploying neural network models with strong focus on
-                            model evaluation and production readiness.
+                            Опыт работы с TensorFlow для создания, обучения и развертывания нейронных сетей с акцентом на
+                            оценку моделей и готовность к продакшену.
                         </p>
-
                         <p>
-                            Applied TensorFlow to develop a neural network that predicts phishing websites based on URLs, achieving 96.61%
-                            test accuracy.
+                            Применен TensorFlow для разработки нейронной сети, предсказывающей фишинговые сайты по URL, достигнута точность 96.61%
+                            на тестовых данных.
                         </p>
                     </div>
                 </div>
@@ -424,7 +418,7 @@ const projectData = [
     },
     {
         id: 11,
-        name: "Optimization",
+        name: "Оптимизация",
         showNameOnButton: true,
         category: "Technical Fields",
         importance: "high",
@@ -441,26 +435,25 @@ const projectData = [
 
                             <img
                                 src="/papers/minesweeper.png"
-                                alt="Minesweeper Optimization Project"
+                                alt="Проект по оптимизации Сапера"
                                 className="project-image"
                             />
-                            <div className="image-overlay">Minesweeper Optimization Paper</div>
+                            <div className="image-overlay">Документ по оптимизации Сапера</div>
                         </a>
                     </div>
                     <div className="optimization-text">
                         <p>
-                            Strong background in mathematical optimization, including linear programming (LP), integer LP,
-                            convex optimization, minimum-cost network flow (MCNF), metaheuristics, and constraint satisfaction problems (CSP).
+                            Сильные знания в математической оптимизации, включая линейное программирование (LP), целочисленное LP,
+                            выпуклую оптимизацию, минимальные сетевые потоки (MCNF), метаэвристики и задачи удовлетворения ограничений (CSP).
                         </p>
                         <p>
-                            Experienced in applying optimization techniques to complex problems in resource allocation, scheduling, and
-                            improving algorithm efficiency.
+                            Опыт применения методов оптимизации к сложным задачам распределения ресурсов, планирования и
+                            улучшения эффективности алгоритмов.
                         </p>
-
                         <p>
-                            <strong>Selected project:</strong> Developed an LP-based model for the Minesweeper game that formulates
-                            game constraints as linear equations to identify safe moves. The model adapts existing approaches and
-                            demonstrates practical application on a 5x5 board.
+                            <strong>Выбранный проект:</strong> Разработана LP-модель для игры Сапер, формулирующая
+                            игровые ограничения как линейные уравнения для идентификации безопасных ходов. Модель адаптирует существующие подходы и
+                            демонстрирует практическое применение на поле 5x5.
                         </p>
                     </div>
                 </div>
@@ -469,7 +462,7 @@ const projectData = [
     },
     {
         id: 12,
-        name: "Publications",
+        name: "Публикации",
         showNameOnButton: true,
         category: "Additional Skills",
         importance: "high",
@@ -486,16 +479,16 @@ const projectData = [
                         >
                             <img
                                 src="/papers/software.jpg"
-                                alt="Software for the Thompson and Funk Polygonal Geometry"
+                                alt="Программное обеспечение для полигональной геометрии Томпсона и Функа"
                                 className="publication-image"
                             />
                             <div className="publication-overlay">
                                 <div className="overlay-title">
-                                    Software for the Thompson and Funk Polygonal Geometry
+                                    Программное обеспечение для полигональной геометрии Томпсона и Функа
                                 </div>
                                 <div className="overlay-description">
-                                    Accepted for presentation at SoCG 2025, a Rank A conference. Interactive tools for Funk,
-                                    Thompson, and Hilbert geometries in convex polygons.
+                                    Принято для презентации на SoCG 2025 (конференция уровня Rank A). Интерактивные инструменты для геометрий
+                                    Функа, Томпсона и Гильберта в выпуклых многоугольниках.
                                 </div>
                             </div>
                         </a>
@@ -510,16 +503,16 @@ const projectData = [
                         >
                             <img
                                 src="/papers/balls.jpg"
-                                alt="On The Heine-Borel Property and Minimum Enclosing Balls"
+                                alt="О свойстве Гейне-Бореля и минимальных ограничивающих сферах"
                                 className="publication-image"
                             />
                             <div className="publication-overlay">
                                 <div className="overlay-title">
-                                    On The Heine-Borel Property and Minimum Enclosing Balls
+                                    О свойстве Гейне-Бореля и минимальных ограничивающих сферах
                                 </div>
                                 <div className="overlay-description">
-                                    Preprint. LP-type structures in minimum-radius ball problems for Hilbert, Thompson,
-                                    and Funk metrics.
+                                    Препринт. Структуры типа LP в задачах минимальных сфер для метрик Гильберта, Томпсона
+                                    и Функа.
                                 </div>
                             </div>
                         </a>
@@ -537,53 +530,53 @@ const projectData = [
         bgImage: '/images/node.png',
         description: () => (
             <>
-                <p>
-                    Used Node.js with Express to prototype backend APIs for the SHELTER game during early development.
-                    Learned core concepts like:
+                 <p>
+                    Использован Node.js с Express для прототипирования API для игры SHELTER на ранних этапах разработки.
+                    Изучены основные концепции:
                 </p>
                 <ul>
-                    <li>Creating basic REST endpoints (GET/POST)</li>
-                    <li>Routing with Express.js</li>
-                    <li>Testing API flows with Postman</li>
-                    <li>Connecting frontend (React Native) to backend</li>
+                    <li>Создание базовых REST-эндпоинтов (GET/POST)</li>
+                    <li>Роутинг с Express.js</li>
+                    <li>Тестирование API с Postman</li>
+                    <li>Подключение фронтенда (React Native) к бэкенду</li>
                 </ul>
                 <p>
-                    Though the final app runs offline, this experiment gave me hands-on experience with server-side JavaScript.
+                    Хотя финальное приложение работает оффлайн, этот эксперимент дал практический опыт работы с серверным JavaScript.
                 </p>
             </>
         ),
         relatedProjects: [
             {
-                label: "SHELTER Game (React Native / Expo)",
+                label: "Игра SHELTER (React Native / Expo)",
                 skillId: 7
             }
         ]
     },
     {
         id: 14,
-        name: "Machine Learning",
+        name: "Машинное обучение",
         showNameOnButton: true,
         category: "Technical Fields",
         importance: "high",
         bgImage: '/images/ml.jpg',
         description: () => (
             <>
-                <p>
-                    Comprehensive understanding of machine learning principles, algorithms, and applications.
-                    Experience with supervised and unsupervised learning, model evaluation, and feature engineering.
+               <p>
+                    Комплексное понимание принципов, алгоритмов и приложений машинного обучения.
+                    Опыт с обучением с учителем и без, оценкой моделей и feature engineering.
                 </p>
                 <p>
-                    Developed and deployed models for classification, regression, clustering, and optimization problems using libraries such as
-                    <strong> scikit-learn</strong>, <strong>TensorFlow</strong>, and <strong>PyTorch</strong>.
+                    Разработаны и развернуты модели для классификации, регрессии, кластеризации и оптимизации с использованием библиотек
+                    <strong> scikit-learn</strong>, <strong>TensorFlow</strong>, и <strong>PyTorch</strong>.
                 </p>
                 <p>
-                    Designed multiple models for <strong>phishing website detection</strong> using URL features.
-                    Implemented <strong>neural networks</strong> (TensorFlow), <strong>decision trees</strong>, and <strong>multivariate linear regression</strong> (scikit-learn),
-                    achieving high accuracy:
+                    Созданы несколько моделей для <strong>обнаружения фишинговых сайтов</strong> по характеристикам URL.
+                    Реализованы <strong>нейронные сети</strong> (TensorFlow), <strong>деревья решений</strong>, и <strong>многомерная линейная регрессия</strong> (scikit-learn),
+                    достигнута высокая точность:
                     <ul>
-                        <li>Neural network — 96.7% (train) / 96.61% (test)</li>
-                        <li>Decision tree — 98% (train) / 96% (test)</li>
-                        <li>Regression — 70.96% (train) / 66.71% (test)</li>
+                        <li>Нейронная сеть — 96.7% (тренировка) / 96.61% (тест)</li>
+                        <li>Дерево решений — 98% (тренировка) / 96% (тест)</li>
+                        <li>Регрессия — 70.96% (тренировка) / 66.71% (тест)</li>
                     </ul>
                 </p>
                 <a
@@ -592,7 +585,7 @@ const projectData = [
                     rel="noopener noreferrer"
                     style={{ fontWeight: 'bold' }}
                 >
-                    View project on GitHub
+                    Посмотреть проект на GitHub
                 </a>
 
             </>
@@ -607,7 +600,7 @@ const projectData = [
     },
     {
         id: 15,
-        name: "Algorithms",
+        name: "Алгоритмы",
         showNameOnButton: true,
         category: "Technical Fields",
         importance: "high",
@@ -615,43 +608,43 @@ const projectData = [
         description: () => (
             <>
                 <p>
-                    Strong theoretical and practical background in algorithms through research, teaching, and implementation:
+                    Глубокая теоретическая и практическая база в алгоритмах через исследования, преподавание и реализацию:
                 </p>
-                <h4>Research Experience</h4>
+                <h4>Опыт исследований</h4>
                 <ul>
                     <li>
-                        <strong>Computational Geometry (REU @ UMD):</strong> Proved Minimum Enclosing Ball (MEB) properties in Hilbert metric spaces and developed visualization tools (JavaScript).
-                        <br /><a href="https://funk-geo-visualizer.vercel.app" target="_blank">View Visualization</a>
+                        <strong>Вычислительная геометрия (REU @ UMD):</strong> Доказаны свойства минимальной ограничивающей сферы (MEB) в метрических пространствах Гильберта и разработаны инструменты визуализации (JavaScript).
+                        <br /><a href="https://funk-geo-visualizer.vercel.app" target="_blank">Посмотреть визуализацию</a>
                     </li>
                     <li>
-                        <strong>Minesweeper Solver:</strong> Designed an LP-based algorithm to identify safe moves by formulating game constraints as linear equations.
+                        <strong>Решатель Сапера:</strong> Разработан LP-алгоритм для идентификации безопасных ходов путем формулирования игровых ограничений как линейных уравнений.
                     </li>
                 </ul>
 
-                <h4>Teaching</h4>
+                <h4>Преподавание</h4>
                 <p>
-                    TA for Algorithms course at Mount Holyoke College, covering:
+                    Ассистент преподавателя по курсу Алгоритмов в Mount Holyoke College, охватывающему:
                 </p>
                 <ul>
-                    <li>Graph algorithms (Dijkstra's, BFS/DFS, MST algorithms)</li>
-                    <li>Complexity analysis and optimization techniques</li>
+                    <li>Графовые алгоритмы (Дейкстры, BFS/DFS, алгоритмы MST)</li>
+                    <li>Анализ сложности и методы оптимизации</li>
                 </ul>
 
-                <h4>Key Skills</h4>
+                <h4>Ключевые навыки</h4>
                 <ul>
-                    <li>Algorithm design/analysis (LP, convex optimization, metric spaces)</li>
-                    <li>Mathematical modeling for computational problems</li>
-                    <li>Algorithm visualization and education</li>
+                    <li>Проектирование/анализ алгоритмов (LP, выпуклая оптимизация, метрические пространства)</li>
+                    <li>Математическое моделирование вычислительных задач</li>
+                    <li>Визуализация алгоритмов и обучение</li>
                 </ul>
             </>
         ),
         relatedProjects: [
             {
-                label: "Minimum Enclosing Ball Algorithm (Computational Geometry)",
+                label: "Алгоритм минимальной ограничивающей сферы (Вычислительная геометрия)",
                 skillId: 8
             },
             {
-                label: "LP-based algorithm to solve Minesweeper (Optimization)",
+                label: "LP-алгоритм для решения Сапера (Оптимизация)",
                 skillId: 10
             }
         ]

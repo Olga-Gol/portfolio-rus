@@ -107,7 +107,7 @@ const Main = () => {
     return (
         <div id="main" className="main-container">
 
-            <h2 className="main-header">PROJECTS</h2>
+            <h2 className="main-header">ПРОЕКТЫ</h2>
 
             <div className="skills-cloud">
                 {projectData.map((skill) => {
@@ -131,8 +131,7 @@ const Main = () => {
                 })}
             </div>
 
-            {/* {activeSkill && ( */}
-            {activeSkill?.videos && (
+            {activeSkill && (
                 <div className="skill-modal" onClick={handleModalClick}>
                     <div className="skill-content">
 
@@ -146,16 +145,6 @@ const Main = () => {
                                             <img src={activeSkill.imgSrc} alt={activeSkill.name} />
                                         ) : (
                                             <div className={`video-rotation-container ${activeSkill.videoOrientation === 'vertical' ? 'vertical' : 'horizontal'}`}>
-                                                {/* {activeSkill.videos.map((videoSrc, index) => (
-                                                    <video
-                                                        key={index}
-                                                        src={videoSrc}
-                                                        autoPlay
-                                                        loop
-                                                        muted
-                                                        className="rotating-video"
-                                                    />
-                                                ))} */}
                                                 {activeSkill.videos.map((src, i) => (
                                                     <VideoPlayer key={i} src={src} />
                                                 ))}
@@ -171,7 +160,7 @@ const Main = () => {
 
                                     {activeSkill.relatedProjects && activeSkill.relatedProjects.length > 0 && (
                                         <div className="related-projects">
-                                            <h4>Related Projects</h4>
+                                            <h4>Связанные проекты</h4>
                                             <ul>
                                                 {activeSkill.relatedProjects.map(({ label, skillId }, index) => (
                                                     <li key={index}>

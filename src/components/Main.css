@@ -157,9 +157,12 @@
     gap: 20px;
 }
 
+/*Related projects*/
 .related-projects {
     margin-top: 20px;
     font-family: 'Nunito', sans-serif;
+    font-size: 0.95rem;
+   
 }
 
 .related-projects h4 {
@@ -267,13 +270,12 @@
     conic-gradient(#0000 30%, #2c3e50);
   -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000);
   animation: spin 1s infinite linear;
-  color: #4a6da7;
 }
 .loading-text {
   font-family: 'Lora', serif;
   font-weight: 600;
   font-size: 1.2rem;
-  color: #4a6da7;
+  color: #2c3e50;
 }
 @keyframes spin {
   to { transform: rotate(360deg); }
@@ -465,6 +467,7 @@
     pointer-events: none;
     text-align: center;
     white-space: nowrap;
+    text-wrap: wrap;
 }
 
 .portfolio-image-container:hover .portfolio-image {
@@ -676,6 +679,7 @@
     pointer-events: none;
     text-align: center;
     white-space: nowrap;
+    text-wrap: wrap;
 }
 
 .data-analysis-image-container:hover .data-analysis-image {

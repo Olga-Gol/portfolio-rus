@@ -25,11 +25,11 @@ const SideMenu = () => {
         <div className="side-menu">
           <button className="close-menu" onClick={() => setIsOpen(false)}>x</button>
           <div style={{ height: '40px' }}></div>
-          <a href="#home" onClick={() => handleMenuItemClick('#home')}>Home</a>
-          <a href="#main" onClick={() => handleMenuItemClick('#main')}>Projects</a>
-          <a href="#experience" onClick={() => handleMenuItemClick('#experience')}>Experience</a>
-          <a href="#skills" onClick={() => handleMenuItemClick('#skills')}>Skills</a>
-          <a href="mailto:olga.golovatskaia@gmail.com">Contact</a>
+          <a href="#home" onClick={() => handleMenuItemClick('#home')}>Главная</a>
+          <a href="#main" onClick={() => handleMenuItemClick('#main')}>Проекты</a>
+          <a href="#experience" onClick={() => handleMenuItemClick('#experience')}>Опыт</a>
+          <a href="#skills" onClick={() => handleMenuItemClick('#skills')}>Навыки</a>
+          <a href="mailto:olga.golovatskaia@gmail.com">Контакты</a>
         </div>
       )}
     </>

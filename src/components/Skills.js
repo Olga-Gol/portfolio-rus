@@ -34,9 +34,9 @@ const skillCategories = {
     { name: 'Algorithm Design', level: 2 },
   ],
   Languages: [
-    { name: 'Russian', level: 5 },
-    { name: 'English', level: 5 },
-    { name: 'German', level: 3 },
+    { name: 'Русский', level: 5 },
+    { name: 'Английский', level: 5 },
+    { name: 'Немецкий', level: 3 },
   ],
 
 };
@@ -49,11 +49,11 @@ const renderStars = (level) => (
 
 const Skills = () => (
   <div id="skills" className="skills-container">
-    <h2 className="skills-header">SKILLS</h2>
+    <h2 className="skills-header">НАВЫКИ</h2>
     <div className="skills-categories">
 
       <div className="skill-category coding">
-        <h3>Coding</h3>
+        <h3>Программирование</h3>
         {skillCategories.Coding.map((skill) => (
           <div key={skill.name} className="skill-item">
             <span>{skill.name}</span>
@@ -63,7 +63,7 @@ const Skills = () => (
       </div>
 
       <div className="skill-category tools">
-        <h3>Tools</h3>
+        <h3>Инструменты</h3>
         {skillCategories.Tools.map((skill) => (
           <div key={skill.name} className="skill-item">
             <span>{skill.name}</span>
@@ -75,7 +75,7 @@ const Skills = () => (
       <div className="skill-category extra">
 
         <div className="additional">
-          <h3>Additional</h3>
+          <h3>Дополнительно</h3>
           {skillCategories.Additional.map((skill) => (
             <div key={skill.name} className="skill-item">
               <span>{skill.name}</span>
@@ -85,7 +85,7 @@ const Skills = () => (
         </div>
 
         <div className="languages">
-          <h3>Languages</h3>
+          <h3>Языки</h3>
           {skillCategories.Languages.map((skill) => (
             <div key={skill.name} className="skill-item">
               <span>{skill.name}</span>
