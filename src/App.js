@@ -29,7 +29,7 @@ const SideMenu = () => {
           <a href="#main" onClick={() => handleMenuItemClick('#main')}>Проекты</a>
           <a href="#experience" onClick={() => handleMenuItemClick('#experience')}>Опыт</a>
           <a href="#skills" onClick={() => handleMenuItemClick('#skills')}>Навыки</a>
-          <a href="mailto:olga.golovatskaia@gmail.com">Контакты</a>
+          <a href="mailto:o.golovatskaia@gmail.com">Контакты</a>
         </div>
       )}
     </>

@@ -5,6 +5,17 @@ html {
   cursor: none !important;
 }
 
+body {
+  height: 100%;
+  overflow-y: auto;
+  margin: 0;
+  background-color:white;
+}
+
+section {
+  min-height: 100vh;
+}
+
 .cursor {
   position: fixed;
   width: 40px;
@@ -15,7 +26,7 @@ html {
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
   display: none; 
 }
 
@@ -23,22 +34,14 @@ body.cursor-active .cursor {
   display: block;
 }
 
+.cursor.cursor-clicked {
+    transform: translate(-50%, -50%) scale(0.7);
+}
+
 /* For cursor section */
 .cursor.section-hover-active {
-  transform: translate(-50%, -50%) scale(4.5);
-  transition: transform 0.5s ease;
-}
-
-
-body {
-  height: 100%;
-  overflow-y: auto;
-  margin: 0;
-  background-color:white;
-}
-
-section {
-  min-height: 100vh;
+  transform: translate(-50%, -50%) scale(9.5);
+  filter: blur(0.2px);
 }
 
 .menu-button {

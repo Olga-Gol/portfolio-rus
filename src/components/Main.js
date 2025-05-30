@@ -5,11 +5,11 @@ import projectData from './ProjectData';
 
 const useVideoPreloader = () => {
     const videoUrls = [
-        '/videos/hilbert1.mp4',
-        '/videos/hilbert2.mp4',
-        '/videos/hilbert3.mp4',
-        '/videos/minesweeper.mov',
-        '/videos/ShelterGameplay.mp4'
+        '/videos/hilbert1.webm',
+        '/videos/hilbert2.webm',
+        '/videos/hilbert3.webm',
+        '/videos/minesweeper.webm',
+        '/videos/ShelterGameplay.webm'
     ];
 
     useEffect(() => {
