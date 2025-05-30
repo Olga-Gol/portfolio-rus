@@ -17,7 +17,7 @@
   color: #2c3e50;
   font-family: 'Lora', serif;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 
 .progress-bar {
@@ -38,7 +38,7 @@
 .progress-text {
   font-family: 'Lora', serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 10;
   color: #2c3e50;
 }

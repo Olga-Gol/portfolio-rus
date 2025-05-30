@@ -18,7 +18,7 @@
   position: absolute;
   bottom: -5px;
   left: 0;
-  width: 70px;
+  width: 50px;
   height: 3px;
   background: #4a6da7;
   border-radius: 3px;
@@ -62,16 +62,23 @@
   flex: none;
 }
 
+
 .timeline-divider {
+  position: relative;
   width: 1px;
-  height: 100px;
+  height: 90px;
   background-color: #4a6da7;
   margin: 0 20px;
+  transition: height 0.3s ease 0.1s;
+}
 
+.timeline-item:hover .timeline-divider {
+  height: 115px; 
+  transition: height 0.3s ease;
 }
 
 .timeline-circle {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -79,6 +86,12 @@
   height: 15px;
   background-color: #4a6da7;
   border-radius: 50%;
+  transition: transform 0.3s ease 0.1s;
+}
+
+.timeline-item:hover .timeline-circle {
+  transform: translate(-50%, -50%) scale(1.35);
+  transition: transform 0.3s ease;
 }
 
 .job-title {

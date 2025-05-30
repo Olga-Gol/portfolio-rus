@@ -4,15 +4,15 @@ import Main from './components/Main';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import LoadingScreen from './components/LoadingScreen';
+import Footer from './components/Footer'; 
+import './cursor.js';
 import './App.css';
 
 const SideMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // This function will handle the click event for menu items
   const handleMenuItemClick = (anchor) => {
     setIsOpen(false);
-    // Smooth scroll to the anchor section
     document.querySelector(anchor).scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -51,6 +51,7 @@ function App() {
           <section id="main"><Main /></section>
           <section id="experience"><Experience /></section>
           <section id="skills"><Skills /></section>
+          <Footer />
         </>
       )}
     </div>
