@@ -63,7 +63,7 @@ const VideoPlayer = ({ src }) => {
             {!isLoaded && (
             <div className="video-loader" aria-busy="true" aria-live="polite">
                 <div className="loading-spinner" aria-hidden="true"></div>
-                    <span className="loading-text">Loading video...</span>
+                    <span className="loading-text">Loading...</span>
                      </div>
             )}
             <video

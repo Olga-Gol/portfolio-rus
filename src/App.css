@@ -95,13 +95,12 @@ section {
 
 .side-menu a:hover,
 .navigation a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
   color: #4a6da7; 
 }
 
 .side-menu a:hover::after,
 .navigation a:hover::after {
-  width: calc(100% - 20px); 
+  width: calc(80% - 20px); 
 }
 
 .navigation a.active {
