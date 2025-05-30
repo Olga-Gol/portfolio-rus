@@ -8,17 +8,20 @@ const HomePage = () => (
 
     </div>
     <div className="introduction-section">
-      <h1>Привет, я <strong>Ольга Головацкая</strong></h1>
+      <div className="cursor-section">
+        <h1>Привет, я <strong>Ольга Головацкая</strong></h1>
 
-       <p>Я окончила бакалавриат Mount Holyoke College с двойной специализацией: Математика и Информатика. Мне интересны  
-        <strong> алгоритмы</strong>, <strong>машинное обучение</strong>, <strong>оптимизация</strong> и <strong>вычислительная геометрия</strong>.
-        Мне нравится работать с такими языками как <strong>Java</strong>, <strong>JavaScript</strong> и <strong>Python</strong>,
-        а также создавать проекты с помощью <strong>React</strong>, <strong>Spring Boot</strong> и <strong>TensorFlow</strong>.
-      </p>
-      <p>Когда я не пишу код, вы можете найти меня за чтением хорошей книги или созданием небольших игр для друзей.</p>
+        <p>Я окончила бакалавриат Mount Holyoke College с двойной специализацией: Математика и Информатика. Мне интересны
+          <strong> алгоритмы</strong>, <strong>машинное обучение</strong>, <strong>оптимизация</strong> и <strong>вычислительная геометрия</strong>.
+          Мне нравится работать с такими языками как <strong>Java</strong>, <strong>JavaScript</strong> и <strong>Python</strong>,
+          а также создавать проекты с помощью <strong>React</strong>, <strong>Spring Boot</strong> и <strong>TensorFlow</strong>.
+        </p>
+        <p>Когда я не пишу код, вы можете найти меня за чтением хорошей книги или созданием небольших игр для друзей.</p>
+      </div>
 
       <blockquote className="quote">Все великие дела и все великие мысли имеют смехотворное начало.</blockquote>
       <p className="quote-author">- Альбер Камю</p>
+
 
       <div className="profile-links">
         <a href="/papers/CV.pdf" target="_blank" rel="noopener noreferrer">

@@ -22,12 +22,12 @@
   height: 3px;
   background: #4a6da7;
   border-radius: 3px;
-  transition: width 0.3s ease 0.1s;
+  transition: width 0.5s ease 0.1s;
 }
 
 .experience-header:hover::after {
   width: 100%;
-  transition: width 0.3s ease;
+  transition: width 0.5s ease;
 }
 
 .timeline-container {
@@ -69,12 +69,12 @@
   height: 90px;
   background-color: #4a6da7;
   margin: 0 20px;
-  transition: height 0.3s ease 0.1s;
+  transition: height 0.5s ease 0.1s;
 }
 
 .timeline-item:hover .timeline-divider {
   height: 115px; 
-  transition: height 0.3s ease;
+  transition: height 0.5s ease;
 }
 
 .timeline-circle {
@@ -86,12 +86,12 @@
   height: 15px;
   background-color: #4a6da7;
   border-radius: 50%;
-  transition: transform 0.3s ease 0.1s;
+  transition: transform 0.5s ease 0.1s;
 }
 
 .timeline-item:hover .timeline-circle {
   transform: translate(-50%, -50%) scale(1.35);
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .job-title {

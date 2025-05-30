@@ -16,12 +16,12 @@
   height: 3px;
   background: #4a6da7;
   border-radius: 3px;
-  transition: width 0.3s ease 0.1s;
+  transition: width 0.5s ease 0.1s;
 }
 
 .footer:hover::before {
   width: 100%;
-  transition: width 0.3s ease;
+  transition: width 0.5s ease;
 }
 
 .footer-content {
@@ -54,7 +54,7 @@
     color: #ecf0f1;
     text-decoration: none;
     font-size: 1rem;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
     color: #2c3e50;
 }
 
@@ -73,7 +73,7 @@
 .social-links a img {
     max-width: 25px;
     height: auto;
-    transition: transform 0.2s ease;
+    transition: transform 0.5s ease;
 }
 
 .social-links a:hover img {

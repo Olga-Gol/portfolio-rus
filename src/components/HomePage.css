@@ -26,7 +26,7 @@
 .profile-links a img {
   max-width: 40px;
   height: auto;
-  transition: transform 0.2s ease;
+  transition: transform 0.5s ease;
 }
 
 .profile-links a:hover img {
@@ -57,12 +57,12 @@
   height: 3px;
   background: #4a6da7;
   border-radius: 3px;
-  transition: width 0.3s ease 0.1s;
+  transition: width 0.5s ease 0.1s;
 }
 
 .introduction-section h1:hover::after {
   width: 100%;
-  transition: width 0.3s ease;
+  transition: width 0.5s ease;
 }
 
 .introduction-section p {
@@ -90,11 +90,11 @@
 }
 
 .quote {
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .quote:hover {
-  border-left-width: 5px;
+  border-left-width: 7px;
   color: #333;
 }
 
