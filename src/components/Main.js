@@ -108,30 +108,32 @@ const Main = () => {
         <div id="main" className="main-container">
 
             <h2 className="main-header">ПРОЕКТЫ</h2>
-            <div className="cursor-section">
+            {/* <div className="cursor-section"> */}
 
-                <div className="skills-cloud">
-                    {projectData.map((skill) => {
-                        // Determine button size based on importance level
-                        const sizeClass = skill.importance === 'high'
-                            ? 'skill-button-large'
-                            : skill.importance === 'medium'
-                                ? 'skill-button-medium'
-                                : 'skill-button-small';
+            <div className="skills-cloud">
+                {projectData.map((skill) => {
+                    // Determine button size based on importance level
+                    const sizeClass = skill.importance === 'high'
+                        ? 'skill-button-large'
+                        : skill.importance === 'medium'
+                            ? 'skill-button-medium'
+                            : 'skill-button-small';
 
-                        return (
-                            <button
-                                key={skill.id}
-                                className={`skill-button ${sizeClass}`}
-                                onClick={() => handleSkillClick(skill)}
-                                style={skill.bgImage ? { backgroundImage: `url(${skill.bgImage})` } : {}}
-                            >
+                    return (
+                        <button
+                            key={skill.id}
+                            className={`skill-button ${sizeClass}`}
+                            onClick={() => handleSkillClick(skill)}
+                            style={skill.bgImage ? { backgroundImage: `url(${skill.bgImage})` } : {}}
+                        >
+                            <span className="skill-button-text">
                                 {skill.showNameOnButton && skill.name}
-                            </button>
-                        );
-                    })}
-                </div>
+                            </span>
+                        </button>
+                    );
+                })}
             </div>
+            {/* </div> */}
 
             {activeSkill && (
                 <div className="skill-modal" onClick={handleModalClick}>
