@@ -10,6 +10,7 @@ const skillCategories = {
     { name: 'CSS', level: 3 },
     { name: 'TypeScript', level: 3 },
     { name: 'MATLAB', level: 3 },
+    { name: 'R', level: 2 },
     { name: 'C', level: 2 },
     { name: 'SQL', level: 2 },
   ],
